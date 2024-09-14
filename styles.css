@@ -96,21 +96,10 @@ nav {
 
 .caption {
     text-align: center;
-    margin-top: 20px;
+    margin: 0;
+    padding: 0 10px;
     font-size: 14px;
     line-height: 1.5;
-}
-
-/* Centering the Recent Posts heading */
-.recent-posts h2 {
-    text-align: center;
-}
-
-/* Removing margin and adding optional padding for captions */
-.caption p {
-    margin: 0;
-    padding: 0 10px; /* Optional: adds padding to the sides */
-    text-align: justify; /* Optional: makes text justified */
 }
 
 .recent-posts {
@@ -119,6 +108,7 @@ nav {
     color: #fff;
     padding: 10px;
     border-radius: 8px;
+    text-align: center;
 }
 
 .post-container {
