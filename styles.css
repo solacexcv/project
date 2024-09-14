@@ -27,9 +27,16 @@ nav {
 }
 
 .menu-links {
-    display: flex;
-    justify-content: center;
-    transition: transform 0.3s ease-in-out;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #2b2b2b;
 }
 
 .menu-links a {
