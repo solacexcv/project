@@ -112,7 +112,16 @@
         <td class="day">HRG<br>A. De Jesus</td>
       </tr>
     </table>
-    <audio autoplay loop src="/schedule.mp3" type="audio/mp3">
-    </audio>
+    <audio id="myAudio" loop>
+    <source src="schedule.mp3" type="audio/mp3" />
+</audio>
+    <script>
+      var audioPlayer = document.getElementById('myAudio');
+      audioPlayer.onloadeddata = function() {
+        setTimeout(function() {
+          audioPlayer.play();
+        }, 2000); // 8-second delay
+      };
+    </script>
   </body>
 </html>
