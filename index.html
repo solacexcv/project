@@ -21,22 +21,21 @@
     </style>
     <script>
         window.onload = function() {
-            // Check if the page has already reloaded once
             if (!localStorage.getItem('reloaded')) {
-                // Set a flag to mark that the page has been reloaded once
                 localStorage.setItem('reloaded', 'true');
-
-                // Reload the page after 1 second (only once)
                 setTimeout(function() {
                     location.reload();
-                }, 1000); // 1 second delay
+                }, 1000); // Reload once after 1 second
             }
         };
     </script>
 </head>
 <body>
-    <video autoplay loop>
+    <video autoplay loop controls>
+        <!-- Ensure the video file path is correct -->
         <source src="video_20241019_225812_edit.mp4" type="video/mp4">
+        <!-- Optional alternative format for wider compatibility -->
+        <source src="video_20241019_225812_edit.webm" type="video/webm">
         Your browser does not support the video tag.
     </video>
 </body>
