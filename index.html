@@ -20,11 +20,17 @@
         }
     </style>
     <script>
-        // Refresh the page immediately on load
+        // Function to reload after 1 second and then every 22 seconds
         window.onload = function() {
+            // Reload after 1 second on first load
             setTimeout(function() {
                 location.reload();
-            }, 23000); // Reload every 23 seconds
+            }, 1000); // 1 second delay
+
+            // Reload every 22 seconds thereafter
+            setInterval(function() {
+                location.reload();
+            }, 22000); // 22 seconds interval
         };
     </script>
 </head>
