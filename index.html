@@ -21,14 +21,21 @@
     </style>
     <script>
         window.onload = function() {
-            // First reload after 1 second (only once)
-            setTimeout(function() {
-                // After the initial reload, the interval for 22 seconds starts
+            // Check if the page has already reloaded once
+            if (!localStorage.getItem('reloaded')) {
+                // Set a flag to mark that the page has been reloaded once
+                localStorage.setItem('reloaded', 'true');
+
+                // Reload the page after 1 second (only once)
+                setTimeout(function() {
+                    location.reload();
+                }, 1000); // 1 second delay
+            } else {
+                // If the page has already reloaded once, start the 22-second loop
                 setInterval(function() {
                     location.reload();
-                }, 22000); // 22 seconds loop after initial reload
-                location.reload(); // Initial reload after 1 second
-            }, 1000); // 1 second delay
+                }, 22000); // 22-second interval
+            }
         };
     </script>
 </head>
