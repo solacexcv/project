@@ -1,127 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Subject Periods">
-    <meta name="description" content="This is subject periods table">
-    <meta http-equiv="refresh" content="10">
-    <title>Subjects schedules</title>
+    <title>Video Page</title>
     <style>
-      .day {
-        height: 60px;
-        width: 600px;
-      {
-
-      body {
-        background-image: url(background.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
-      }
+        body, html {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+        }
+        video {
+            max-width: 100%;
+            max-height: 100%;
+        }
     </style>
-  </head>
-  <body>
-    <table width="1000" bgcolor="black">
-      <tr align="center" bgcolor="white">
-        <th class="day">TIME</th>
-        <th class="day">MONDAY</th>
-        <th class="day">TUESDAY</th>
-        <th class="day">WENESDAY</th>
-        <th class="day">THURSDAY</th>
-        <th class="day">FRIDAY</th>
-      <tr align="center" bgcolor="yellow">
-        <td class="day" bgcolor="white">6:00- 6:40 AM</td>
-        <td class="day">ESP<br>A. De Jesus</td>
-        <td class="day">ESP<br>A. De Jesus</td>
-        <td class="day">ESP<br>A. De Jesus</td>
-        <td class="day">ESP<br>A. De Jesus</td>
-        <td class="day">ESP<br>A. De Jesus</td>
-      </tr>
-      <tr align="center" bgcolor="#FFBE00">
-        <td class="day" bgcolor="white">6:40- 7:20 AM</td>
-        <td class="day">AP<br>A. Segarra</td>
-        <td class="day">AP<br>A. Segarra</td>
-        <td class="day">AP<br>A. Segarra</td>
-        <td class="day">AP<br>A. Segarra</td>
-        <td class="day">AP<br>A. Segarra</td>
-      </tr>
-      <tr align="center" bgcolor="#FE504F">
-        <td class="day" bgcolor="white">7:20- 8:00 AM</td>
-        <td class="day">MAPEH<br>A. Santos</td>
-        <td class="day">MAPEH<br>A. Santos</td>
-        <td class="day">MAPEH<br>A. Santos</td>
-        <td class="day">MAPEH<br>A. Santos</td>
-        <td class="day">MAPEH<br>A. Santos</td>
-      </tr>
-      <tr align="center" bgcolor="#02AFF1">
-        <td class="day" bgcolor="white">8:00- 8:40 AM</td>
-        <td class="day">ICT<br>J. Maninang</td>
-        <td class="day">ICT<br>J. Maninang</td>
-        <td class="day">ICT<br>J. Maninang</td>
-        <td class="day">ICT<br>J. Maninang</td>
-        <td class="day">ICT<br>J. Maninang</td>
-      </tr>
-      <tr align="center" bgcolor="white">
-        <th bgcolor="white">8:40- 9:00 AM</th>
-        <th></th>
-        <th></th>
-        <th>RECESS</th>
-        <th></th>
-        <th></th>
-      </tr>
-      <tr align="center" bgcolor="#996533">
-        <td class="day" bgcolor="white">6:00- 6:40 AM</td>
-        <td class="day">FILIPINO<br>A. Miranda</td>
-        <td class="day">FILIPINO<br>A. Miranda</td>
-        <td class="day">FILIPINO<br>A. Miranda</td>
-        <td class="day">FILIPINO<br>A. Miranda</td>
-        <td class="day">FILIPINO<br>A. Miranda</td>
-      </tr>
-      <tr align="center" bgcolor="#92D14F">
-        <td class="day" bgcolor="white">6:40- 7:20 AM</td>
-        <td class="day">MATH<br>I. Cauguiran</td>
-        <td class="day">MATH<br>I. Cauguiran</td>
-        <td class="day">MATH<br>I. Cauguiran</td>
-        <td class="day">MATH<br>I. Cauguiran</td>
-        <td class="day">MATH<br>I. Cauguiran</td>
-      </tr>
-      <tr align="center" bgcolor="#BFE4F4">
-        <td class="day" bgcolor="white">7:20- 8:00 AM</td>
-        <td class="day">ENGLISH<br>N. Gomez</td>
-        <td class="day">ENGLISH<br>N. Gomez</td>
-        <td class="day">ENGLISH<br>N. Gomez</td>
-        <td class="day">ENGLISH<br>N. Gomez</td>
-        <td class="day">ENGLISH<br>N. Gomez</td>
-      </tr>
-      <tr align="center" bgcolor="#F2CDEE">
-        <td class="day" bgcolor="white">8:00- 8:40 AM</td>
-        <td class="day">SCIENCE<br>A. Venida</td>
-        <td class="day">SCIENCE<br>A. Venida</td>
-        <td class="day">SCIENCE<br>A. Venida</td>
-        <td class="day">SCIENCE<br>A. Venida</td>
-        <td class="day">SCIENCE<br>A. Venida</td>
-      </tr>
-      <tr align="center" bgcolor="#747474">
-        <td class="day" bgcolor="white">11:40- 12:10 NN</td>
-        <td class="day">NMP<br>A. De Jesus</td>
-        <td class="day">NMP<br>A. De Jesus</td>
-        <td class="day">NMP<br>A. De Jesus</td>
-        <td class="day">NMP<br>A. De Jesus</td>
-        <td class="day">HRG<br>A. De Jesus</td>
-      </tr>
-    </table>
-    <audio id="myAudio" loop>
-    <source src="schedule.mp3" type="audio/mp3" />
-</audio>
-    <script>
-      var audioPlayer = document.getElementById('myAudio');
-      audioPlayer.onloadeddata = function() {
-        setTimeout(function() {
-          audioPlayer.play();
-        }, 2000); // 8-second delay
-      };
-    </script>
-  </body>
+</head>
+<body>
+    <video controls>
+        <source src="video_20241019_224213_edit.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
 </html>
