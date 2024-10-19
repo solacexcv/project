@@ -29,10 +29,29 @@
         .button:hover {
             background-color: #FFD700;
         }
+        div {
+    background-color: white;
+    color: black;
+    padding: 120px 60px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;            /* Use Flexbox */
+    flex-direction: column;   /* Stack items vertically */
+    justify-content: center;  /* Center items vertically */
+    align-items: center;      /* Center items horizontally */
+        }
+        p {
+         font-size: 18px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
+  <div>
+    <p>Wag ka pong magugulat ah.</p>
     <button class="button"
-    onclick="window.location.href='video.html'">CLICK ME PO</button>
+    onclick="window.location.href='video.html'">CLICK ME PO!</button>
+  </div>
 </body>
 </html>
